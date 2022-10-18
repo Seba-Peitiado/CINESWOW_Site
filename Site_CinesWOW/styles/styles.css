@@ -1,27 +1,123 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 16px
+}
+
+
+
+body {
+  background-color:  #0f0e17;
+ 
+
+}
+
+
 .close {
     transform: translateY(-100%);
     transition: 0.5s;
     z-index: 99999;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
 
+.one {
+  align-items: center;
+  grid-column: 1 ;
+  grid-row: 3;
+}
+.two {
+  align-items: center;
+  grid-column: 2 ;
+  grid-row: 3;
+}
+.three {
+  align-items: center;
+  grid-column: 3;
+  grid-row:3;
+}
 
+.Estrenos{
+  border: 2px solid #1e4629;
+  border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+}
 
+.Preventa{
+  border: 2px solid #1e4629;
+  border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.CarteleraC {
+  border: 2px solid #1e4629;
+  border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  text-align: center;
+}
+
+.firstqr {
+  grid-column: 1 ;
+  grid-row: 3;
+  width: 100%;
+    height: auto;
+}
+
+.secondqr {
+  grid-column: 2 ;
+  grid-row: 3;
+  width: 100%;
+    height: auto;
+}
+
+.thirdqr {
+  grid-column: 3 ;
+  grid-row: 3;
+  width: 100%;
+    height: auto;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+/* fuentes y colores */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fffffe;
+}
 
 /* mediaquery para site responsive */ 
 @media (min-width: 768px) {
     html {
     font-size: 16px;
   }
-}
 
-html {
-  position: relative;
-  min-height: 100%;
-}
+  .firstqr, .secondqr, .thirdqr {
+    width: 50%;
+    display: inline;
+  }
 
-body {
-  margin-bottom: 60px;
+
+
 }
 
 
