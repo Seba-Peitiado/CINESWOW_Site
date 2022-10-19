@@ -12,33 +12,40 @@ body {
 }
 
 
+
+.big-container{
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+.responsive-image{
+  width: 100%;
+  height: auto;
+}
 .close {
     transform: translateY(-100%);
     transition: 0.5s;
     z-index: 99999;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+.responsive-image {
+  width: 100%;
+  height: auto;
 }
 
-.one {
-  align-items: center;
-  grid-column: 1 ;
-  grid-row: 3;
+.fila {
+  display: flex;
+  flex-wrap: wrap;
 }
-.two {
-  align-items: center;
-  grid-column: 2 ;
-  grid-row: 3;
+
+.columna{
+  padding: 20px;
 }
-.three {
-  align-items: center;
-  grid-column: 3;
-  grid-row:3;
+
+.galeria .columna {
+  width: 100%;
 }
 
 .Estrenos{
@@ -66,34 +73,19 @@ body {
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  text-align: center;
+  display:flex;
+  flex: wrap;
+ 
+  
 }
 
-.firstqr {
-  grid-column: 1 ;
-  grid-row: 3;
+
+
+#responsive-qr {
   width: 100%;
-    height: auto;
+  height: auto;
+  padding: 20px;
 }
-
-.secondqr {
-  grid-column: 2 ;
-  grid-row: 3;
-  width: 100%;
-    height: auto;
-}
-
-.thirdqr {
-  grid-column: 3 ;
-  grid-row: 3;
-  width: 100%;
-    height: auto;
-}
-
 .centered-text {
   text-align: center;
 }
@@ -106,18 +98,33 @@ body {
 }
 
 /* mediaquery para site responsive */ 
-@media (min-width: 768px) {
+@media (min-width:768px) {
     html {
     font-size: 16px;
   }
 
-  .firstqr, .secondqr, .thirdqr {
+  #responsive-qr {
     width: 50%;
-    display: inline;
+    
+  }
+
+  .galeria .columna {
+    width: 50%;
   }
 
 
+}
 
+
+@media (min-width:1024px){
+  #responsive-qr {
+    width: 33.3333%;
+   justify-content: space-between;
+  }
+
+  .galeria .columna {
+    width: 33.3333%;
+  }
 }
 
 
