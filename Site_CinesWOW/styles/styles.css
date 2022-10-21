@@ -127,6 +127,23 @@ a {
   
 }
 
+.centered-text {
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  
+}
+
+
+button {
+  border: 5px solid #1e4629;
+  border-radius: 5px;
+  color: #ccc;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0f0e17;
+}
 
 
 #responsive-qr {
