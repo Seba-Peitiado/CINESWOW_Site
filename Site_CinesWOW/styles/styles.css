@@ -145,6 +145,9 @@ button {
   background-color: #0f0e17;
 }
 
+#Resultado{
+  list-style-type: none;
+}
 
 #responsive-qr {
   width: 100%;
