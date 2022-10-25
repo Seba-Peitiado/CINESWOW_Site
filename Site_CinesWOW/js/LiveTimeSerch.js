@@ -3,7 +3,11 @@ const boton = document.querySelector('#Boton');
 
 
 const filtrar = ()=>{
-console.log(formulario.value);
+//console.log(formulario.value);
+const texto = formulario.value.ToloverCase();
+for (let pelicula of Peliculas){
+let nombre = pelicula.nombre.ToloverCase();
+}
 }
 
 boton.addEventListener('click', filtrar)
