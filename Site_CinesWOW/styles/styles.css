@@ -145,9 +145,29 @@ button {
   background-color: #0f0e17;
 }
 
+
+#Elformulario input[type="submit"] {
+  background-color: #ff8906;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border-bottom-width: 0;
+}
+
 #Formulario {
+  border: 2px solid #f25f4c;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+}
+
+#Elformulario label {
+  display: block;
+  margin-top: 10px;
 
 }
+
 
 #Resultado{
   list-style-type: none;
