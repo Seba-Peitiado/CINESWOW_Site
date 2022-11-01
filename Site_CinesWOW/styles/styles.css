@@ -153,17 +153,19 @@ button {
   text-transform: uppercase;
   margin-top: 10px;
   border-bottom-width: 0;
+  display: inline-block;
 }
 
 #Formulario {
   border: 2px solid #1e4629;
   border-radius: 5px;
   padding: 10px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
 #Elformulario label {
-  display: block;
+  display: flex;
   margin-top: 10px;
 
 }
