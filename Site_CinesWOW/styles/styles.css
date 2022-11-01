@@ -147,7 +147,7 @@ button {
 
 
 #Elformulario input[type="submit"] {
-  background-color: #ff8906;
+  background-color: #1e4629;
   color: white;
   padding: 10px;
   text-transform: uppercase;
@@ -156,7 +156,7 @@ button {
 }
 
 #Formulario {
-  border: 2px solid #f25f4c;
+  border: 2px solid #1e4629;
   border-radius: 5px;
   padding: 10px;
   display: inline-block;
